@@ -30,6 +30,7 @@ Além desta seção introdutória, este trabalho está estruturado da seguinte f
 % BACKGROUND AND RELATED WORK
 % -----------------------------------------------
 \section{ENTERPRISE ARCHITECTURE COMO RESPOSTA AOS DESAFIOS ESTRATÉGICOS DAS ORGANIZAÇÕES}
+\label{sec:trabalhosRelacionados}
 
 Segundo Mafra e Travassos [4], o atraso no estado da arte da indústria de software é evidenciado pelo fato de que frequentemente a indústria de software é acometida por diversos anúncios de “cura” para os mais variados problemas, o que evidencia que em 2006 a situação não havia mudado consideravelmente em relação à década anterior. Com isto, surgem dúvidas tais como de qual solução deve-se escolher, onde buscar fundamentação para auxiliar essa escolha ou como saber a precedência dessa solução. Ainda segundo os mesmos autores, os estudos experimentais consistem em uma importante maneira de se obter maiores informações a respeito de novas tecnologias, metodologias e boas práticas quanto ao desenvolvimento de software. 
 Segundo Kitchenham [5], uma Revisão Sistemática da Literatura é uma forma de avaliar e interpretar todas as pesquisas disponíveis, referentes a uma questão de investigação particular, área temática ou fenômeno de interesse. Assim, pode-se definir esta revisão como uma revisão abrangente e não tendenciosa. Kitchenham afirma, ainda, que as revisões sistemáticas têm por objetivo apresentar uma avaliação justa de um tópico de investigação, usando uma metodologia confiável, rigorosa e auditável. 
@@ -48,7 +49,7 @@ Um dos principais métodos da engenharia de software baseada em evidências são
 % -----------------------------------------------
 \section{REVISÃO SISTEMÁTICA DA LITERATURA}
 
-Nesta seção será apresentado um protocolo de busca em fontes da academia com o intuito de observer e identificar o estado de arte atual, vantagens, desvantagens e frameworks adotados na implementação e uso da Enterprise Architecture (EA). Como ponto de partida, foi estabelecida uma metodologia dividida em 5 etapas, conforme a Fig. 1.
+Nesta seção será apresentado um protocolo de busca em fontes da academia com o intuito de observar e identificar o estado de arte atual, vantagens, desvantagens e frameworks adotados na implementação e uso da Enterprise Architecture (EA). Como ponto de partida, foi estabelecida uma metodologia dividida em 5 etapas, conforme a Fig. 1.
 
 % -- INSERT IMG: Figura 1. Processo cíclico para refinamento da busca
 
@@ -81,7 +82,7 @@ Segundo Travassos e Biolchini [8], por meio de alguns passos, confirma e acresce
 Nós usamos a seguinte questão para guiar nossos processos de pesquisa e seleção:
 
 \begin{enumerate}[start=0,label={R\arabic*):}]
-    \item Qual o estado da arte da arquitetura corporativa?
+    \item \label{pp:perguntaPrincipal} Qual o estado da arte da arquitetura corporativa? 
 \end{enumerate}
 
 Nós também usamos xx perguntas especificas para guiar e estruturar a extração, analise e sintese das evidencias:
@@ -96,7 +97,23 @@ Nós também usamos xx perguntas especificas para guiar e estruturar a extraçã
 
 \subsection{Base de Dados e Estratégia de Busca}
 
-Listar base de dados
+Foi realizada uma busca automática, em seis mecanismos de busca e indexadores (Tabela~\ref{tab:engenhosBusca}), utilizando uma string de busca baseada nos termos gerais extraídos do \ref{pp:perguntaPrincipal} e em sinônimos de Enterprise Architecture encontrados na literatura discutida na Seção~\ref{sec:trabalhosRelacionados}. O processo de pesquisa automatizado realizado até outubro de 2018 recuperou mais de 1545 documentos.
+
+\begin{table}[H] 
+    \label{tab:engenhosBusca}
+    \centering
+    \caption{Engenhos de Busca Automáticos}
+    \begin{tabular}{@{}ll@{}}
+        \toprule
+        Engenho de Busca    & Link                                  \\ \midrule
+        ACM Digital Library & http://dl.acm.org/                    \\
+        IEEEXplore          & http://www.ieeexplore.ieee.org/Xplore \\
+        Scopus              & http://www.scopus.com/home.url        \\
+        Science Direct      & http://www.sciencedirect.com/         \\
+        Springer            & http://www.springer.com.br/           \\
+        Emerald             & https://www.emeraldinsight.com/       \\ \bottomrule
+    \end{tabular}
+\end{table}
 
 especificar a string de busca
 
